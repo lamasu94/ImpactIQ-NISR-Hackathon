@@ -1,0 +1,101 @@
+column,group,type,percent_missing
+province,Place,category,0.0
+district,Place,category,0.0
+ur,Place,category,0.0
+member,Household makeup,number,0.0
+s5aq1,House,category,0.0
+s5aq2,House,category,0.0
+s5aq3,House,number,0.0
+s5aq7,House,category,0.0
+s5cq1,"Water, power, toilet",category,0.0
+s5cq3,"Water, power, toilet",category,0.0
+s5cq14,"Water, power, toilet",category,0.0
+s5cq16,"Water, power, toilet",category,0.0
+s5cq21,"Water, power, toilet",category,0.0
+s5cq22a,"Water, power, toilet",category,0.6
+s5cq25,"Water, power, toilet",category,0.0
+s5cq26,"Water, power, toilet",category,0.9
+s5dq1,House,category,0.0
+s5dq2,House,category,0.0
+s5dq3,House,category,0.0
+s5dq4,House,category,0.0
+s5eq1,Bad events,category,0.0
+s5eq2a,Bad events,category,0.0
+s5eq4a,Bad events,number,0.0
+s7aq4a,Animals,number,0.0
+s7aq4b,Animals,number,0.0
+s7aq4c,Animals,number,0.0
+s7aq4d,Animals,number,0.0
+s7aq4e,Animals,number,0.0
+s7aq4f,Animals,number,0.0
+n_children,Household makeup,number,0.0
+n_elderly,Household makeup,number,0.0
+share_female,Household makeup,number,0.0
+max_school,Education,number,0.0
+n_can_read,Education,number,0.0
+n_can_write,Education,number,0.0
+n_can_calc,Education,number,0.0
+n_insured,Health,number,0.0
+n_disabled,Health,number,0.0
+n_phone,Phone and internet,number,0.0
+any_smartphone,Phone and internet,number,0.0
+any_computer,Phone and internet,number,0.0
+any_internet,Phone and internet,number,0.0
+head_age,Household makeup,number,0.0
+head_female,Household makeup,number,0.0
+head_marital,Household makeup,category,0.0
+head_school,Household makeup,number,0.0
+head_can_read,Household makeup,number,0.0
+owns_item_01,Belongings,number,0.0
+owns_item_02,Belongings,number,0.0
+owns_item_03,Belongings,number,0.0
+owns_item_04,Belongings,number,0.0
+owns_item_05,Belongings,number,0.0
+owns_item_06,Belongings,number,0.0
+owns_item_07,Belongings,number,0.0
+owns_item_08,Belongings,number,0.0
+owns_item_09,Belongings,number,0.0
+owns_item_10,Belongings,number,0.0
+owns_item_11,Belongings,number,0.0
+owns_item_12,Belongings,number,0.0
+owns_item_13,Belongings,number,0.0
+owns_item_14,Belongings,number,0.0
+owns_item_15,Belongings,number,0.0
+owns_item_16,Belongings,number,0.0
+owns_item_17,Belongings,number,0.0
+owns_item_18,Belongings,number,0.0
+owns_item_19,Belongings,number,0.0
+owns_item_20,Belongings,number,0.0
+owns_item_21,Belongings,number,0.0
+owns_item_22,Belongings,number,0.0
+owns_item_23,Belongings,number,0.0
+owns_item_24,Belongings,number,0.0
+owns_item_25,Belongings,number,0.0
+owns_item_26,Belongings,number,0.0
+owns_item_27,Belongings,number,0.0
+n_item_types,Belongings,number,0.0
+n_items_total,Belongings,number,0.0
+has_account,Savings and loans,number,0.0
+has_bank_or_momo,Savings and loans,number,0.0
+in_tontine,Savings and loans,number,0.0
+tried_loan,Savings and loans,number,0.0
+owes_money,Savings and loans,number,0.0
+minutes_to_service_01,Distance to services,number,22.3
+minutes_to_service_02,Distance to services,number,7.2
+minutes_to_service_03,Distance to services,number,65.6
+minutes_to_service_04,Distance to services,number,10.6
+minutes_to_service_05,Distance to services,number,0.1
+minutes_to_service_06,Distance to services,number,75.1
+minutes_to_service_07,Distance to services,number,50.5
+minutes_to_service_08,Distance to services,number,84.4
+minutes_to_service_09,Distance to services,number,18.6
+minutes_to_service_10,Distance to services,number,5.9
+minutes_to_service_11,Distance to services,number,57.8
+minutes_to_service_12,Distance to services,number,0.1
+minutes_to_service_13,Distance to services,number,0.0
+minutes_to_service_14,Distance to services,number,31.6
+minutes_to_service_15,Distance to services,number,15.9
+minutes_mean,Distance to services,number,0.0
+people_per_room,Combined,number,0.0
+children_per_member,Combined,number,0.0
+share_can_read,Combined,number,0.0
