@@ -1,0 +1,53 @@
+======================================================================
+Extremely poor household  (hhid 302154)
+  Real spending per adult per year :    296,525 Rwf
+  Model's guess                    :    363,320 Rwf   (typical household: 848,344)
+
+  Clues pushing the guess DOWN (poorer):
+    Household size                             = 6                                   -14%
+    District                                   = Nyanza                              -10%
+    Total belongings owned                     = 3                                    -6%
+    People per sleeping room                   = 3                                    -6%
+    Number of different belongings owned       = 3                                    -6%
+  Clues pushing the guess UP (richer):
+    Owns: mattresses (1=yes)                   = 1                                    +1%
+    Share of members who are women             = 0.67                                 +1%
+    Owns: chairs (1=yes)                       = 0                                    +0%
+    Share of members who can read              = 0.67                                 +0%
+    Months to recover from bad event           = 0                                    +0%
+
+======================================================================
+Moderately poor household  (hhid 302342)
+  Real spending per adult per year :    416,177 Rwf
+  Model's guess                    :    660,877 Rwf   (typical household: 848,344)
+
+  Clues pushing the guess DOWN (poorer):
+    District                                   = Nyanza                              -14%
+    Total belongings owned                     = 1                                    -6%
+    Number of different belongings owned       = 1                                    -6%
+    Floor material                             = Beaten earth                         -5%
+    Share of members who are children          = 0                                    -4%
+  Clues pushing the guess UP (richer):
+    Household size                             = 1                                   +30%
+    People per sleeping room                   = 1                                    +9%
+    Share of members who are women             = 1                                    +5%
+    Number of sleeping rooms                   = 1                                    +2%
+    Owes money (1=yes)                         = 1                                    +1%
+
+======================================================================
+Not poor household  (hhid 301719)
+  Real spending per adult per year :  2,606,572 Rwf
+  Model's guess                    :  1,500,742 Rwf   (typical household: 848,344)
+
+  Clues pushing the guess DOWN (poorer):
+    Total belongings owned                     = 2                                    -7%
+    Floor area                                 = 9.6                                  -6%
+    Number of different belongings owned       = 2                                    -6%
+    Share of members who are children          = 0                                    -4%
+    Owns: electric iron (1=yes)                = 0                                    -2%
+  Clues pushing the guess UP (richer):
+    Household size                             = 1                                   +29%
+    Main cooking fuel                          = Gas                                 +13%
+    Floor material                             = Cement                              +12%
+    People per sleeping room                   = 1                                   +11%
+    Main water source                          = Piped to neighbor HH                 +6%

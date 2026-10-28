@@ -1,0 +1,4 @@
+model,R2 (1 = perfect),"typical error (RMSE, log)",poor households found (%),poor households missed (%),chosen but not poor (%),rank correlation,same-size pick: poor found (%),same-size pick: not poor (%)
+A. Belongings count (simple),0.294,0.508,11.9,88.1,54.9,0.444,39.9,60.1
+B. Linear regression (all clues),0.41,0.465,44.8,55.2,39.5,0.708,55.6,44.4
+C. LightGBM (all clues),0.685,0.34,46.0,54.0,33.7,0.759,60.5,39.5
