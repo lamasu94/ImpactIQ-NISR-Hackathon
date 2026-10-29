@@ -1,8 +1,9 @@
 import { ApiError } from "./errors.js";
 import { saveBlob } from "./download.js";
 
-const env = import.meta.env || {};
-const API = import.meta.env.PROD ? "/api" : "http://localhost:8000";
+export const env = import.meta.env || {};
+export const API = import.meta.env.PROD ? "/api" : "http://localhost:8000";
+export const BASE_URL = API;
 
 async function toApiError(res) {
   let body = null;
