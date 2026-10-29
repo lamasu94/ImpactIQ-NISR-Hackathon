@@ -81,6 +81,7 @@ def _startup():
 
 @app.get("/health")
 def health():
+    P.load()
     return send({"status": "ok", "model_loaded": P.A.loaded})
 
 
