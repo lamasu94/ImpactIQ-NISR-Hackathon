@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "web": { "root": "frontend/poverty-targeting-tool" },
+    "api": { "root": ".", "entrypoint": "main:app",
+            "excludeFiles": "{raw_data/**,data_csv/**,frontend/**,design/**,.venv/**,output/*.png" }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": { "service": "api" } },
+    { "source": "/(.*)", "destination": { "service": "web" } }
+  ]
+  
+}

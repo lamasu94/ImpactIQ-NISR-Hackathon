@@ -2,7 +2,7 @@ import { ApiError } from "./errors.js";
 import { saveBlob } from "./download.js";
 
 const env = import.meta.env || {};
-export const BASE_URL = (env.VITE_API_URL || "http://localhost:8000").replace(/\/$/, "");
+const API = import.meta.env.PROD ? "/api" : "http://localhost:8000";
 
 async function toApiError(res) {
   let body = null;

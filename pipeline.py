@@ -1,11 +1,4 @@
-"""pipeline.py: the logic behind the API, as plain functions.
 
-Nothing in here knows about web servers. api.py calls these functions.
-Everything it needs was produced by the earlier scripts:
-    output/lightgbm_model.joblib, feature_list.csv, model_table.csv, optimizer_table.csv,
-    model_results.csv, allocation_results.csv, fairness_by_group.csv, fairness_by_district.csv
-    value_labels.json (next to this file)
-"""
 import json
 import warnings
 from datetime import datetime, timezone
@@ -153,6 +146,7 @@ def schema():
     required += [{"name": c, "label": _label(c), "type": types.get(c, "number")} for c in a.clues]
     return {
         "default_budget": default_budget(),
+        "default_budget_per_household": round(default_budget() / len(a.optimizer)),
         "max_rows": MAX_ROWS,
         "programs": [{"id": k, "name": v["name"], "cost_per_household": v["cost"]} for k, v in PROGRAMS.items()],
         "required_columns": required,
@@ -393,13 +387,11 @@ def scan_csv(answer):
 # ------------------------------------------------------------------------------ 4. explaining one household
 def explain(row_df, decision=None, true_spending=None):
     """row_df: a one-row table in the upload format. Returns the answer for /household/{hhid}."""
-    import shap
     a = load()
-    if a.explainer is None:
-        a.explainer = shap.TreeExplainer(a.model)
     X = _model_input(row_df)
-    sv = a.explainer.shap_values(X)[0]
-    base = float(np.ravel(a.explainer.expected_value)[0])
+    contrib = a.model.predict(X, pred_contrib=True)[0]   # same numbers as SHAP, built into LightGBM
+    sv = contrib[:-1]
+    base = float(contrib[-1])
     mu = base + sv.sum()
     eff = [(a.clues[j], float(sv[j])) for j in range(len(a.clues))]
 
