@@ -1,4 +1,35 @@
 
+import ctypes
+import glob
+import os
+import sysconfig
+import tempfile
+
+
+def _load_openmp():
+    """Vercel's servers have no OpenMP library (libgomp.so.1), which LightGBM needs.
+    scikit-learn ships a copy under another name, so we rename it in a temp file and load it first."""
+    try:
+        ctypes.CDLL("libgomp.so.1", mode=ctypes.RTLD_GLOBAL)       # already on this machine: nothing to do
+        return
+    except OSError:
+        pass
+    try:
+        found = glob.glob(os.path.join(sysconfig.get_paths()["purelib"], "scikit_learn.libs", "libgomp*.so*"))
+        if not found:
+            return
+        data = bytearray(open(found[0], "rb").read())
+        old = os.path.basename(found[0]).encode() + b"\0"
+        i = data.find(old)
+        data[i:i + len(old)] = b"libgomp.so.1".ljust(len(old), b"\0")
+        out = os.path.join(tempfile.gettempdir(), "libgomp.so.1")
+        open(out, "wb").write(data)
+        ctypes.CDLL(out, mode=ctypes.RTLD_GLOBAL)
+    except Exception:
+        pass
+
+
+_load_openmp()
 import json
 import warnings
 from datetime import datetime, timezone
