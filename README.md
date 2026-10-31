@@ -12,6 +12,9 @@ Every decision comes with a plain-English reason, and a fairness report shows wh
 > This is a hackathon prototype. It estimates poverty **today**. It does not forecast the future, and it does not replace human judgement.
 
 ---
+## Link to the DEMO video is here:
+https://drive.google.com/file/d/1DFZLAosRvE7v3ejU3mq1YkMt6YrH3PV7/view?usp=sharing 
+
 
 ## Results at a glance
 
